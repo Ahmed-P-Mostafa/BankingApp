@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Banking"
 include(":app")
+include(":auth")
+include(":account")

@@ -2,6 +2,7 @@
 <resources>
 
     <style name="Theme.Banking" parent="android:Theme.Material.Light.NoActionBar" />
+
     <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/bank</item>
     </style>
