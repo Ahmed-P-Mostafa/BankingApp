@@ -73,4 +73,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.hilt)
     kapt(libs.hilt.kapt)
+    implementation(libs.free.rasp)
 }

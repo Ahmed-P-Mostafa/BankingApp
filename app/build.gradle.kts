@@ -9,6 +9,15 @@ android {
     namespace = "com.polotika.banking"
     compileSdk = 34
 
+    signingConfigs {
+
+        create("release") {
+            storeFile = file("D:\\1Android\\KeyStore\\banking\\keystore.jks")
+            storePassword = "0104322424"
+            keyPassword = "0104322424"
+            keyAlias = "releasekey"
+        }
+    }
     defaultConfig {
         applicationId = "com.polotika.banking"
         minSdk = 24
@@ -24,11 +33,13 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
+            //signingConfig = signingConfig.release
         }
     }
     compileOptions {
@@ -74,4 +85,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.hilt)
     kapt(libs.hilt.kapt)
+    implementation(libs.free.rasp)
+
 }

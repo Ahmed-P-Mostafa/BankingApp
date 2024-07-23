@@ -11,6 +11,7 @@ composeBom = "2023.08.00"
 appcompat = "1.7.0"
 material = "1.12.0"
 hiltVersion = "2.48"
+freeRaspVersion = "9.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,6 +32,9 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 hilt = {group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion"}
 hilt-kapt = {group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion"}
+free-rasp = {group = "com.aheaditec.talsec.security", name = "TalsecSecurity-Community", version.ref = "freeRaspVersion"}
+
+
 
 
 [plugins]
@@ -38,4 +42,6 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 hilt-library = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+free-rasp-library = {id = "com.aheaditec.talsec.security",version.ref ="freeRaspVersion"}
+
 

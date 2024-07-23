@@ -19,7 +19,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class SplashActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val viewModel : SplashViewMode by viewModels()
+        val viewModel : SplashViewModel by viewModels()
         enableEdgeToEdge()
         setContent {
             BankingTheme {
